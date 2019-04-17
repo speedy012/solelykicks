@@ -1,0 +1,16 @@
+<%= form_for @sneaker do |f| %>
+  <%= f.label 'Sneaker Title' %><br>
+  <p><%= f.text_field :title %><p><br>
+
+  <%= f.label 'Sneaker Style' %><br>
+  <p><%= f.text_field :style %><p><br>
+
+  <%= f.label 'Sneaker Color' %><br>
+  <p><%= f.text_field :color %><p><br>
+
+  <%= f.label 'Sneaker Photo' %><br>
+  <p><%= f.text_field :sneaker_img %><p><br>
+
+
+  <%= f.submit "Update Sneaker"%>
+<% end %>

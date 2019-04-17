@@ -1,0 +1,11 @@
+<h2> <%=@brand.name%></h2>
+
+    <% if flash[:message] %>
+    <%=flash[:message]%>
+      <%end%>
+
+<h2> <%@brand.sneakers.each do |sneaker| %></h2>
+    <h2><%=sneaker.title%></h2>
+    <h2><%= image_tag sneaker.sneaker_img%></h2>
+    <%=button_to "Like", '/likes', {method: :post, params: {user_id: session[:user_id], sneaker_id: sneaker.id}}%>
+<% end %>

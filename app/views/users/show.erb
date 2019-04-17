@@ -1,0 +1,20 @@
+<% if @logged_in_user %>
+  <h2> <%=@user.name%></h2>
+
+  <h2> <%@user.likes.each do |like|%>
+        <h2><%=like.sneaker.title%></h2>
+        <h2><%= image_tag like.sneaker.sneaker_img%></h2>
+
+       <%= form_tag like_path(like), method: "delete" do %>
+        <%= submit_tag "Delete Favorite" %>
+       <% end %>
+  <% end %>
+
+  <%= form_tag user_path(@user), method: "delete" do %>
+    <%= submit_tag "Delete Your Account" %>
+  <% end %>
+
+  <% else %>
+  <h2>YOU NEED TO LOG IN</h2>
+    <h2><%=link_to "Home", users_path%></h2>
+  <% end %>

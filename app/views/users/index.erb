@@ -1,0 +1,15 @@
+<h2> Users:</h2>
+
+<% @users.each do |user| %>
+  <h2><%=link_to user.name, user%></h2>
+  <%end%>
+
+<% if @logged_in_user %>
+  Hi <%= User.find(@logged_in_user).name%>!
+  <%= link_to "Logout", logout_path %>
+<% else %>
+  <%= form_tag "/login" do %>
+    <%=  text_field_tag "name" %>
+    <%= submit_tag "Log In"%>
+  <% end %>
+<% end %>

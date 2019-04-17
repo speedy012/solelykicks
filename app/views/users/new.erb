@@ -1,0 +1,17 @@
+<h2> Create New User</h2>
+
+<ol> <% if flash[:user_errors] %>
+      <% flash[:user_errors].each do |e| %>
+      <li><%= e %></li>
+      <% end %>
+    <% end %>
+</ol>
+
+
+
+
+<%= form_for @user do |f| %>
+  <%= f.label 'Please Enter Username:' %><br>
+  <%= f.text_field :name %><br>
+  <%= f.submit %>
+<% end %>

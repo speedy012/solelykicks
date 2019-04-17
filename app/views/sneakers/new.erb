@@ -1,0 +1,15 @@
+<h2>Did I Miss One???</h2>
+<h3>Add it!</h3>
+
+<%= form_for @sneaker do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :style %>
+  <%= f.text_field :style  %>
+  <%= f.label :color %>
+  <%= f.text_field :color  %>
+  <%= f.label :sneaker_img, "Photo Url" %>
+  <%= f.text_field :sneaker_img %>
+  <%= f.collection_select(:brand_id, @brands, :id, :name, prompt: true)%>
+  <%= f.submit %>
+<% end %>

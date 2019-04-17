@@ -1,0 +1,5 @@
+<h2> Brands </h2>
+
+<% @brands.each do |brand|%>
+  <h3><%=link_to brand.name, brand%></h3>
+  <%end%>
