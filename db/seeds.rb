@@ -9,8 +9,8 @@
 
 #brands
 adidas = Brand.create(name: "Adidas")
-new_balance = Brand.create(name:"New Balance")
 nike = Brand.create(name: "Nike")
+new_balance = Brand.create(name:"New Balance")
 balenciaga = Brand.create(name: "Balenciaga")
 vans = Brand.create(name: "Vans")
 puma = Brand.create(name: "Puma")
@@ -20,3 +20,35 @@ ascis = Brand.create(name: "Ascis")
 keds = Brand.create(name: "Keds")
 saucony = Brand.create(name: "Saucony")
 sketchers = Brand.create(name:"Sketchers")
+
+#sneakers
+#adidas
+Sneaker.create(id: 6, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 7, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 8, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 9, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 10, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 11, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 12, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 13, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: 14, title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+
+
+
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )
+Sneaker.create(id: , title:  , style:  , brand_id:  ,  sneaker_img:  , color: )

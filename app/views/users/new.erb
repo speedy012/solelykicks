@@ -13,5 +13,7 @@
 <%= form_for @user do |f| %>
   <%= f.label 'Please Enter Username:' %><br>
   <%= f.text_field :name %><br>
+  <%= f.label :password %><br>
+  <%= f.password_field :password %><br>
   <%= f.submit %>
 <% end %>

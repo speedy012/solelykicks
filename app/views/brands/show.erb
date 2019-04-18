@@ -9,3 +9,6 @@
     <h2><%= image_tag sneaker.sneaker_img%></h2>
     <%=button_to "Like", '/likes', {method: :post, params: {user_id: session[:user_id], sneaker_id: sneaker.id}}%>
 <% end %>
+
+
+<h3><%=link_to "Home", user_path(session[:user_id]) %></h3>
