@@ -1,14 +1,15 @@
-<h1>Login</h1>
+<div class="login-container">
+  <h1>Login</h1>
+  <h4><%= flash[:notice] %></h4>
 
-<h4><%= flash[:notice] %></h4>
+  <!-- form will POST to '/login' -->
+  <%= form_tag(login_path, :class => "login-form") do %>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
 
-<!-- form will POST to '/login' -->
-<%= form_tag(login_path) do %>
-  <%= label_tag :name %>
-  <%= text_field_tag :name %>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-
-  <%= submit_tag 'Login' %>
-<% end %>
+    <%= submit_tag 'Login' %>
+  <% end %>
+</div>

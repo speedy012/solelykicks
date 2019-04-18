@@ -5,6 +5,9 @@ class LikesController < ApplicationController
     if like.valid?
       flash[:message] = "added to your favorites"
       redirect_to brand_path(like.brand)
+    else
+      flash[:message] = "already in your list"
+      redirect_to brand_path(like.brand)
     end
   end
 

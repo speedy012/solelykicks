@@ -10,6 +10,28 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap";
+
+.login-container,
+.signup-container {
+  width: 80%;
+  margin: 20% auto 0 auto;
+}
+
+.login-form,
+.new_user {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: rgba(34, 15, 9, 1);
+  h1 {
+    font-size: 24px;
+  }
+  a {
+    color: white;
+    font-size: 24px;
+  }
+}

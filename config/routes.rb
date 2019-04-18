@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :sneakers
   resources :users, only: [:index, :only, :show, :new, :create, :destroy]
 
-  root 'application#home'
+  root 'application#home', as: "home"
   #post '/likes', to: 'likes#create'
 
   get '/login', to: 'sessions#new', as: "login"
