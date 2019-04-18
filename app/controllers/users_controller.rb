@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   skip_before_action :authorized, only: [:new, :create]
   # before_action :logged_in_user, only: [:show, :index]
   #example from class: before_action :find_the_user, only: [:show, :edit , :update]
+
   def index
     @users = User.all
   end

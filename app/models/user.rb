@@ -4,6 +4,6 @@ class User < ApplicationRecord
   has_many :sneakers, through: :likes
 
   # validates :name, presence: true
-  # validates :name, uniqueness: true
+  
 
 end

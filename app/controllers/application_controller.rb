@@ -22,13 +22,8 @@ class ApplicationController < ActionController::Base
   end
 
   def home
-    
+
     render 'users/home.erb'
   end
-
-  # def custom_auth_method
-  #   flash[:notice] = "not your account"
-  #   redirect_to logged_in_user
-  # end
 
 end

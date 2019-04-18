@@ -35,16 +35,17 @@ class SneakersController < ApplicationController
   def destroy
     @sneaker = Sneaker.find(params[:id])
     @sneaker.destroy
-    redirect_to sneakers_path, notice: "Sneaker has been deleted."
+    redirect_to sneakers_path
   end
 
-
+  def random
+     @sneakers = Sneaker.all.sample
+  end
 
   private
 
   def sneaker_params
     params.require(:sneaker).permit(:style, :title, :color, :sneaker_img, :brand_id)
   end
-
 
 end
