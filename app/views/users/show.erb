@@ -1,10 +1,11 @@
   <% if logged_in_user == @user %>
 
   <h2>Hi, <%=@user.name.capitalize%>!</h2>
+  <div class="btn-group">
   <%= button_to 'Brands', brands_path, method: :get %>
   <%= button_to 'View Random Sneaker', random_sneaker_path, method: :get%>
   <%= button_to 'Logout', logout_path, method: :delete %>
-
+  </div>
     <h3><u>Look at your favorites:</u></h3>
     <h2><%@user.likes.each do |like|%>
         <ul style="list-style-type:disc;">

@@ -12,6 +12,9 @@
  *
  */
 @import "bootstrap";
+.img_preview {
+  width: 100%;
+}
 
 .login-container,
 .signup-container {
@@ -34,4 +37,13 @@
     color: white;
     font-size: 24px;
   }
+}
+
+//showpage for homepage
+.home-page{
+  margin: 0 auto 0 auto;
+}
+.btn1, .btn2{
+ display:inline-block;
+
 }
